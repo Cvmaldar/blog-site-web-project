@@ -1,0 +1,126 @@
+:root {
+  --color-primary: #32cbfc;
+  --color-primary-dark: #00bfff;
+}
+body {
+  overflow-x: hidden;
+}
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(197, 197, 197);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: var(--color-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 80px;
+  background: var(--color-primary);
+  z-index: 9999;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 25px;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-toggler-icon {
+  color: #000;
+}
+.nav-item {
+  margin: 0 30px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+.nav-item:hover {
+  transform: scale(1.1);
+}
+/* Home */
+#home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/home_pg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home h1 {
+  position: relative;
+  font-weight: 700;
+  top: 200px;
+  left: 200px;
+}
+#home h5 {
+  position: relative;
+  top: 230px;
+  left: 200px;
+}
+/* Blogs */
+#blogs {
+  display: contents;
+}
+#blogs h2 {
+  width: fit-content;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.blog-cards {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  place-items: center;
+  grid-row-gap: 30px;
+  margin: 50px auto;
+}
+.blog-card {
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 7px 7px 8px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 1s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-card:hover {
+  transform: scale(1.1);
+}
+.blog-card div {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  border-radius: 15px;
+}
+.blog-card p {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+/* Responsiveness */
+@media (max-width: 960px) {
+  .blog-cards {
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 480px) {
+  .blog-card {
+    width: 90vw;
+  }
+}
