@@ -27,6 +27,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>BlogPro!</title>
   </head>
@@ -57,45 +61,16 @@
         </ul>
       </div>
     </nav>
+    <!-- Blogs -->
     <section id="blogs">
       <h2>Our Blogs</h2>
-      <div class="blog-cards">
-        <div class="blog-card" style="background-image: url('../img/img1.jpg')">
-          <div>
-            <p>Kahlahari Desert</p>
-          </div>
-        </div>
-
-        <div class="blog-card" style="background-image: url('../img/img2.jpg')">
-          <div>
-            <p>Is crypto the future?</p>
-          </div>
-        </div>
-
-        <div class="blog-card" style="background-image: url('../img/img3.jpg')">
-          <div>
-            <p>Best books of 2021</p>
-          </div>
-        </div>
-
-        <div class="blog-card" style="background-image: url('../img/img4.jpg')">
-          <div>
-            <p>Super cars</p>
-          </div>
-        </div>
-
-        <div class="blog-card" style="background-image: url('../img/img5.jpg')">
-          <div>
-            <p>Galaxy</p>
-          </div>
-        </div>
-
-        <div class="blog-card" style="background-image: url('../img/img6.jpg')">
-          <div>
-            <p>SpaceX</p>
-          </div>
-        </div>
-      </div>
+      <div id="blog-grid" class="blog-cards"></div>
+    </section>
+    <!-- Blog -->
+    <section id="blog-page" class="hidden">
+      <button class="blog-back" onclick="back()">
+        <i class="fas fa-arrow-circle-left"></i>
+      </button>
     </section>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
@@ -103,5 +78,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- Script -->
+    <script defer src="../js/blogs.js"></script>
   </body>
 </html>
