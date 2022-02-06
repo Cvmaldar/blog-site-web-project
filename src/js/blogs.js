@@ -244,13 +244,12 @@ blogCards.forEach((e) =>
     if (blogId == null) {
       blogId = e.target.parentElement.parentElement.getAttribute("data-id");
     }
-    blogPage.insertAdjacentHTML(
-      "beforeend",
-      `<h2>${blogs[+blogId].title}</h2>
+    blogPage.innerHTML = `<button class="blog-back" onclick="back()">
+      <i class="fas fa-arrow-circle-left"></i>
+    </button><h2>${blogs[+blogId].title}</h2>
 <div class="blog-content">
   <p>${blogs[+blogId].content}</p>
-</div>`
-    );
+</div>`;
     blogPage.style.display = "contents";
     blogSection.style.display = "none";
   })
