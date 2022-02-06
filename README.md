@@ -7,4 +7,3 @@ This is a blog site, built using HTML 5, CSS 3, Bootstrap and JS. This is a proj
 
 ![Screenshot (20)](https://user-images.githubusercontent.com/75678927/152676506-ea636981-3fcd-4d4d-82a4-a6ae1225fe2b.png)
 
-![Screenshot (21)](https://user-images.githubusercontent.com/75678927/152676522-1f628913-8829-4581-8a77-fff9a91e11d4.png)
