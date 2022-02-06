@@ -165,3 +165,30 @@ body {
     width: 90vw;
   }
 }
+
+.footer {
+  margin: 0%;
+  padding: 0%;
+  background-color: #313131;
+  color:white;
+  text-align: center;
+  height: 148px;
+}
+
+.footer h1 {
+  padding: 1%;
+  font-size: 25px;
+}
+
+.cont-link ul {
+  margin: 0%;
+  padding: 1%;
+  list-style: none;
+  display: inline-flex;
+}
+
+.copyright {
+  margin: 0%;
+  padding: 1%;
+  background-color: black;
+}
