@@ -172,7 +172,7 @@ body {
   background-color: #313131;
   color:white;
   text-align: center;
-  height: 148px;
+  min-height: 140px;
 }
 
 .footer h1 {
