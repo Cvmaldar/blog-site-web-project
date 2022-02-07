@@ -256,7 +256,6 @@ blogCards.forEach((e) =>
 );
 // Back button:
 const back = () => {
-  console.log("HI");
   blogPage.style.display = "none";
   blogSection.style.display = "contents";
 };
